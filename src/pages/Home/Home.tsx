@@ -2,8 +2,7 @@ const Home = () => {
     return (
         <>
             <div>HomeHome</div>
-            <img src="../cat1.jpg" alt="" />
-            <img src="../Vallebild1.HEIC" alt="" />
+            <img src="../Vallebild1.jpg" alt="" />
         </>
     )
 }
