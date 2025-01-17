@@ -1,6 +1,5 @@
 import "./Navbar.css"
-import { FaPhone } from "react-icons/fa";
-import { FaHome } from "react-icons/fa";
+import { FaHome, FaPhone } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -9,9 +8,9 @@ const Navbar = () => {
             <div>
                 <h2>Ekohuset Rannarve</h2>
             </div>
-            <div>
-                <Link to="/"><FaHome /></Link>
-                <Link to="/contact"><FaPhone /></Link>
+            <div className="Navbar-Links">
+                <Link className="Navbar-Links-Home" to="/"><FaHome /></Link>
+                <Link className="Navbar-Links-Phone" to="/contact"><FaPhone /></Link>
             </div>
         </div>
     )
