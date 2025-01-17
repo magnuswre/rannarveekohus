@@ -6,6 +6,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
 }
 
 .image-card:hover {
@@ -15,7 +16,8 @@
 
 .image-card__image {
     width: 100%;
-    height: auto;
+    height: 200px;
+    /* Set a fixed height */
     object-fit: cover;
 }
 
@@ -36,6 +38,47 @@
     margin-top: 8px;
 }
 
+/* Modal Styles */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+}
+
+.modal-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
 /* Responsive Styles */
 @media (min-width: 768px) {
     .image-card {
@@ -46,11 +89,16 @@
     .image-card__image {
         width: 50%;
         height: 100%;
+        /* Maintain the height */
     }
 
     .image-card__content {
-        width: 50%;
-        text-align: left;
-        padding: 24px;
+        position: relative;
+        width: 80%;
+        height: 80%;
+        max-width: 800px;
+        max-height: 600px;
+        background-color: #fff;
+        border-radius: 8px;
     }
 }

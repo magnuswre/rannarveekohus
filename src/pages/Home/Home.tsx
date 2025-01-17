@@ -1,15 +1,13 @@
 import ImageCard from "../../components/ImageCard/ImageCard"
+import Navbar from "../../components/Navbar/Navbar"
 import './Home.css'
 
 const Home = () => {
     return (
         <>
             <div className="Home-Container">
-                <h1>Ekohuset Rannarve</h1>
-                <p>Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Perferendis, voluptatum tenetur!
-                    Animi nostrum debitis, natus illum ad modi dignissimos,
-                    blanditiis cumque nisi quo et libero. Laborum, praesentium accusamus? Autem, vitae?</p>
+                <Navbar />
+                <p>Välkommen till denna lantliga idyll! Vi har ett fantastiskt öppet läge med sol från morgon till kväll. </p>
                 <ImageCard />
             </div>
         </>
