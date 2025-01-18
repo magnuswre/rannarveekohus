@@ -4,3 +4,9 @@
     margin-bottom: 1rem;
     font-weight: 600;
 }
+
+.Home-Hero img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}

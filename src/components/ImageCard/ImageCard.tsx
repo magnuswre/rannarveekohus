@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./ImageCard.css";
 
-import imageOne from "../../assets/Vallebild1.jpg";
+// import imageOne from "../../assets/Vallebild1.jpg";
 import imageTwo from "../../assets/IMG_3302.jpg";
 import imageThree from "../../assets/utsiktvalle1.jpg";
 import imageFour from "../../assets/vallenyamotladan.jpg";
@@ -12,12 +12,12 @@ import imageEight from "../../assets/IMG_3295.jpg";
 import imageNine from "../../assets/vallekok.jpg";
 
 const images = [
-    {
-        src: imageOne,
-        alt: "fasad väster",
-        title: "huset från väster",
-        description: "This is the first image",
-    },
+    // {
+    //     src: imageOne,
+    //     alt: "fasad väster",
+    //     title: "huset från väster",
+    //     description: "This is the first image",
+    // },
     {
         src: imageTwo,
         alt: "fasad söder",
@@ -43,18 +43,16 @@ const images = [
         description: "This is the fifth image",
     },
     {
-        src: imageSix,
+        src: imageSeven,
         alt: "uteplats",
         title: "uteplats",
-        description: "This is the seventh image",
-
+        description: "This is the sixth image",
     },
     {
-        src: imageSeven,
+        src: imageSix,
         alt: "Allrum",
         title: "allrum/kök",
-        description: "This is the sixth image",
-
+        description: "This is the seventh image",
     },
     {
         src: imageEight,
@@ -87,7 +85,7 @@ const ImageCard: React.FC = () => {
 
     return (
         <>
-            <div
+            <div className="ImageCard-Container"
                 style={{
                     display: "grid",
                     gap: "20px",

@@ -1,4 +1,11 @@
+.ImageCard-Container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+
 .image-card {
+
     display: flex;
     flex-direction: column;
     background-color: #fff;
