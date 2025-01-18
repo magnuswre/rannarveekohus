@@ -12,7 +12,6 @@ const Home = () => {
                     <img src={imageOne} alt="" />
                 </div>
                 <p>Välkommen till denna lantliga idyll! Vi har ett fantastiskt öppet läge med sol från morgon till kväll. </p>
-
                 <ImageCard />
             </div >
         </>
