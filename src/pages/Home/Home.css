@@ -29,3 +29,9 @@
 .image-gallery-bullets-container {
     background-color: black;
 }
+
+@media (min-width: 768px) {
+    .image-gallery-slide .image-gallery-image {
+        height: 600px;
+    }
+}
