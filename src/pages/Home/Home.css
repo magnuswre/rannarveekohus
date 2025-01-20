@@ -11,3 +11,21 @@
     height: 250px;
     object-fit: cover;
 }
+
+
+
+.image-gallery-slide .image-gallery-image {
+    height: 300px;
+    background-color: black;
+    object-fit: cover !important;
+    /* width: 80%; */
+}
+
+.image-gallery-svg {
+    border: none;
+    background-color: transparent;
+}
+
+.image-gallery-bullets-container {
+    background-color: black;
+}
