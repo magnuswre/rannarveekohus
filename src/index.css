@@ -10,20 +10,5 @@
 body {
     text-align: center;
     background-color: #e4e8da;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    overflow-x: hidden;
-}
 
-@media (max-height: 430px) and (orientation: landscape) {
-    body {
-        margin: 0;
-        padding: 0;
-    }
-
-    .Navbar-Container {
-        padding-left: 0;
-        padding-right: 0;
-    }
 }
