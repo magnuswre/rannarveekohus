@@ -17,17 +17,29 @@
 .Navbar-Links {
     display: flex;
     align-items: end;
-    gap: 10px;
+    gap: 7px;
 }
 
 .Navbar-Links-Home {
     text-decoration: none;
     color: #000;
     font-size: 20px;
-    margin-top: 2px;
+    /* margin-top: 2px; */
 }
 
 .Navbar-Links-Phone {
+    font-size: 17px;
+    text-decoration: none;
+    color: #000;
+}
+
+.Navbar-Links-Hammer {
+    font-size: 17px;
+    text-decoration: none;
+    color: #000;
+}
+
+.Navbar-Links-Info {
     font-size: 17px;
     text-decoration: none;
     color: #000;

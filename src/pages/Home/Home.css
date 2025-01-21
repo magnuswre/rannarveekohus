@@ -18,12 +18,14 @@
     object-position: 85% center;
 }
 
-/* .Image-Gallery-Home-Container {
-    background-color: #F2F2F0;
-} */
+.Image-Gallery-Home-Container {
+    /* background-color: #F2F2F0; */
+    margin-left: 30px;
+    margin-right: 30px;
+}
 
 .image-gallery-slide .image-gallery-image {
-    height: 300px;
+    height: 200px;
     background-color: black;
     object-fit: cover !important;
     /* width: 80%; */
