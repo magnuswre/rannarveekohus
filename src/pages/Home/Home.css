@@ -1,3 +1,8 @@
+.Home-Content {
+    background-color: #F2F2F0;
+}
+
+
 .Home-Container p {
     margin-top: 1rem;
     color: #333;
@@ -12,6 +17,10 @@
     object-fit: cover;
     object-position: 85% center;
 }
+
+/* .Image-Gallery-Home-Container {
+    background-color: #F2F2F0;
+} */
 
 .image-gallery-slide .image-gallery-image {
     height: 300px;

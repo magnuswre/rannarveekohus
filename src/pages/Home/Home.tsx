@@ -55,16 +55,18 @@ const Home = () => {
         <>
             <div className="Home-Container">
                 <Navbar />
-                <div className="Home-Hero">
-                    <img src={imageOne} alt="" />
-                </div>
-                <p>Välkommen till denna lantliga idyll! Vi har ett fantastiskt öppet läge med sol från morgon till kväll. </p>
-                <div className="Image-Gallery-Home-Container">
-                    <ImageGallery
-                        items={images}
-                        slideDuration={1000}
+                <div className="Home-Content">
+                    <div className="Home-Hero">
+                        <img src={imageOne} alt="" />
+                    </div>
+                    <p>Välkommen till denna lantliga idyll! Vi har ett fantastiskt öppet läge med sol från morgon till kväll. </p>
+                    <div className="Image-Gallery-Home-Container">
+                        <ImageGallery
+                            items={images}
+                            slideDuration={1000}
 
-                    />
+                        />
+                    </div>
                 </div>
                 {/* <ImageCard /> */}
             </div >
