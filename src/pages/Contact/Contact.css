@@ -1,3 +1,9 @@
+.Contact-Info {
+    background-color: #F2F2F0;
+    padding-bottom: 100px;
+}
+
+
 .Contact-Info * {
     padding-top: 10px;
     font-weight: 500;
