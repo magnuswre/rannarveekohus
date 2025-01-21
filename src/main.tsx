@@ -4,6 +4,8 @@ import App from './App.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <>
-    <App />
+    <div className='App-Container'>
+      <App />
+    </div>
   </>,
 )
