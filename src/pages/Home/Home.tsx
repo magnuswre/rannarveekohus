@@ -1,7 +1,7 @@
 // import ImageCard from "../../components/ImageCard/ImageCard"
 import Navbar from "../../components/Navbar/Navbar"
 import './Home.css'
-import imageOne from "../../assets/Valleost2.jpg"
+import imageOne from "../../assets/valleost2.jpg"
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 
