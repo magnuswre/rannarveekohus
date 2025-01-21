@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./HamburgerMenu.css";
+import { Link } from "react-router-dom";
 
 const HamburgerMenu: React.FC = () => {
     const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -22,9 +23,8 @@ const HamburgerMenu: React.FC = () => {
 
             <div className={`menu ${isOpen ? "show" : ""}`}>
                 <ul>
-                    <li><a href="/">Hem</a></li>
-                    {/* <li><a href="/">Om oss</a></li> */}
-                    <li><a href="/contact">Kontakt</a></li>
+                    <li><Link to="/">Hem</Link></li>
+                    <li><Link to="/contact">Kontakt</Link></li>
                 </ul>
             </div>
         </div>
