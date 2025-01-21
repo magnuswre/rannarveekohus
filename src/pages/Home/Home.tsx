@@ -1,7 +1,7 @@
 // import ImageCard from "../../components/ImageCard/ImageCard"
 import Navbar from "../../components/Navbar/Navbar"
 import './Home.css'
-import imageOne from "../../assets/Vallebild1.jpg"
+import imageOne from "../../assets/Valleost2.jpg"
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 
@@ -48,7 +48,6 @@ const images = [
         original: imageNine,
         thumbnail: imageNine,
     },
-
 ]
 
 const Home = () => {
@@ -60,11 +59,13 @@ const Home = () => {
                     <img src={imageOne} alt="" />
                 </div>
                 <p>Välkommen till denna lantliga idyll! Vi har ett fantastiskt öppet läge med sol från morgon till kväll. </p>
-                <ImageGallery
-                    items={images}
-                    slideDuration={1000}
+                <div className="Image-Gallery-Home-Container">
+                    <ImageGallery
+                        items={images}
+                        slideDuration={1000}
 
-                />
+                    />
+                </div>
                 {/* <ImageCard /> */}
             </div >
         </>
