@@ -1,5 +1,5 @@
 import "./Navbar.css"
-import { FaHome, FaPhone, FaHammer, FaInfo } from "react-icons/fa";
+import { FaPhone, FaHammer, FaInfo } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -10,7 +10,7 @@ const Navbar = () => {
             </div>
             <div className="Navbar-Links">
                 <Link className="Navbar-Links-Info" to="/about"><FaInfo /></Link>
-                <Link className="Navbar-Links-Home" to="/"><FaHome /></Link>
+                {/* <Link className="Navbar-Links-Home" to="/"><FaHome /></Link> */}
                 <Link className="Navbar-Links-Phone" to="/contact"><FaPhone /></Link>
                 <Link className="Navbar-Links-Hammer" to="/construction"><FaHammer /></Link>
             </div>
