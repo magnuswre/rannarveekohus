@@ -51,6 +51,37 @@
     background-color: black;
 }
 
+.Home-Bullets {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+
+.Home-Bullets-Info div {
+    display: flex;
+    align-items: center;
+}
+
+.Home-Bed-Icon,
+.Home-Bedroom-Icon,
+.Home-Eco-House-Icon,
+.Home-Relaxing-Icon {
+    height: 25px;
+    color: black
+}
+
+.Home-Describing-Text p {
+    line-height: 1.5;
+    text-align: left;
+}
+
+.Home-Describing-Text a {
+    color: #333;
+    font-weight: 600;
+}
+
 @media(min-width: 412px) {
     .Home-Hero img {
         height: 300px;
@@ -76,8 +107,14 @@
 
 @media (min-width: 860px) {
     .Home-Hero img {
+        /* text-align: center; */
+        /* border: 2px solid #333; */
         max-width: 95%;
         height: 500px;
+    }
+
+    .Home-Describing-Text p {
+        text-align: center;
     }
 }
 

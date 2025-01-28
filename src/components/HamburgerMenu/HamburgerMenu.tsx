@@ -40,6 +40,8 @@ const HamburgerMenu: React.FC = () => {
                 <ul>
                     <li><Link to="/">Hem</Link></li>
                     <li><Link to="/contact">Kontakt</Link></li>
+                    <li><Link to="/location">Platsen</Link></li>
+                    <li><Link to="/facilities">Boendeinformation</Link></li>
                     <li><Link to="/buildingtechnique">Byggtekniker</Link></li>
                 </ul>
             </div>
