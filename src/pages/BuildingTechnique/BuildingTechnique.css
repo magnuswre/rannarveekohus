@@ -1,12 +1,11 @@
 .BuildingTechnique-Content {
     background-color: #F2F2F0;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 50px;
+    padding: 20px;
     line-height: 1.5;
+    text-align: left;
 }
 
-.BuildingTechnique-Content h3 {
+/* .BuildingTechnique-Content h3 {
     padding-top: 10px;
     padding-bottom: 10px;
-}
+} */
