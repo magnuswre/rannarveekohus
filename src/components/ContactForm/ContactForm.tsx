@@ -4,7 +4,7 @@ const ContactForm: React.FC = () => {
     const [formData, setFormData] = useState({
         name: "",
         email: "",
-        subject: "",
+        // subject: "",
         message: ""
     });
     const [success, setSuccess] = useState(false);
@@ -30,7 +30,7 @@ const ContactForm: React.FC = () => {
 
             if (response.ok) {
                 setSuccess(true);
-                setFormData({ name: "", email: "", subject: "", message: "" });
+                setFormData({ name: "", email: "", message: "" });
             } else {
                 throw new Error("Form submission failed");
             }
@@ -42,14 +42,14 @@ const ContactForm: React.FC = () => {
     return (
         <div>
             <h2>Contact Us</h2>
-            {success && <p>Thank you! We'll get back to you soon. 😊</p>}
-            {error && <p>Something went wrong, please try again. 😞</p>}
+            {success && <p>Tack för ditt meddelande, vi hör av oss så snart vi kan! 😊</p>}
+            {error && <p>Något gick fel, försök igen. 😞</p>}
 
             <form name="contact" method="POST" data-netlify="true" onSubmit={handleSubmit}>
                 <input type="hidden" name="form-name" value="contact" />
 
                 <label>
-                    Name:
+                    Namn:
                     <input type="text" name="name" value={formData.name} onChange={handleChange} required />
                 </label>
 
@@ -58,13 +58,13 @@ const ContactForm: React.FC = () => {
                     <input type="email" name="email" value={formData.email} onChange={handleChange} required />
                 </label>
 
-                <label>
+                {/* <label>
                     Subject:
                     <input type="text" name="subject" value={formData.subject} onChange={handleChange} required />
-                </label>
+                </label> */}
 
                 <label>
-                    Message:
+                    Meddelande:
                     <textarea name="message" value={formData.message} onChange={handleChange} required />
                 </label>
 
