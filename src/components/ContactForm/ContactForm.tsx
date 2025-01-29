@@ -40,21 +40,21 @@ const ContactForm: React.FC = () => {
     };
 
     return (
-        <div>
-            <h2>Contact Us</h2>
+        <div className="Contact-Form-Container">
+            <h4>eller via formuläret:</h4>
             {success && <p>Tack för ditt meddelande, vi hör av oss så snart vi kan! 😊</p>}
             {error && <p>Något gick fel, försök igen. 😞</p>}
 
-            <form name="contact" method="POST" data-netlify="true" onSubmit={handleSubmit}>
+            <form name="contact" method="POST" data-netlify="true" onSubmit={handleSubmit} className="Contact-Form-Content">
                 <input type="hidden" name="form-name" value="contact" />
 
                 <label>
-                    Namn:
+                    <p>Namn:</p>
                     <input type="text" name="name" value={formData.name} onChange={handleChange} required />
                 </label>
 
                 <label>
-                    Email:
+                    <p>Email:</p>
                     <input type="email" name="email" value={formData.email} onChange={handleChange} required />
                 </label>
 
@@ -64,11 +64,11 @@ const ContactForm: React.FC = () => {
                 </label> */}
 
                 <label>
-                    Meddelande:
+                    <p>Meddelande:</p>
                     <textarea name="message" value={formData.message} onChange={handleChange} required />
                 </label>
-
-                <button type="submit">Send</button>
+                <br />
+                <button type="submit">Skicka</button>
             </form>
         </div>
     );
