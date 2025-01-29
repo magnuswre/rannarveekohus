@@ -39,32 +39,45 @@ const ContactForm: React.FC = () => {
     };
 
     return (
-        <div>
-            <h2>Kontakta oss</h2>
-            {success && <p>Tack! Vi återkommer snart. 😊</p>}
-            {error && <p>Något gick fel, försök igen. 😞</p>}
+        <>
+            {/* <form name="contact" netlify>
+                <p>
+                    <label>Name <input type="text" name="name" /></label>
+                </p>
+                <p>
+                    <label>Email <input type="email" name="email" /></label>
+                </p>
+                <p>
+                    <button type="submit">Send</button>
+                </p>
+            </form> */}
+            <div>
+                <h2>Kontakta oss</h2>
+                {success && <p>Tack! Vi återkommer snart. 😊</p>}
+                {error && <p>Något gick fel, försök igen. 😞</p>}
 
-            <form name="kontakt" method="POST" data-netlify="true" onSubmit={handleSubmit}>
-                <input type="hidden" name="form-name" value="kontakt" />
+                <form name="kontakt" method="POST" data-netlify="true" onSubmit={handleSubmit}>
+                    <input type="hidden" name="form-name" value="kontakt" />
 
-                <label>
-                    Namn:
-                    <input type="text" name="namn" value={formData.namn} onChange={handleChange} required />
-                </label>
+                    <label>
+                        Namn:
+                        <input type="text" name="namn" value={formData.namn} onChange={handleChange} required />
+                    </label>
 
-                <label>
-                    E-post:
-                    <input type="email" name="email" value={formData.email} onChange={handleChange} required />
-                </label>
+                    <label>
+                        E-post:
+                        <input type="email" name="email" value={formData.email} onChange={handleChange} required />
+                    </label>
 
-                <label>
-                    Meddelande:
-                    <textarea name="meddelande" value={formData.meddelande} onChange={handleChange} required />
-                </label>
+                    <label>
+                        Meddelande:
+                        <textarea name="meddelande" value={formData.meddelande} onChange={handleChange} required />
+                    </label>
 
-                <button type="submit">Skicka</button>
-            </form>
-        </div>
+                    <button type="submit">Skicka</button>
+                </form>
+            </div>
+        </>
     );
 };
 
