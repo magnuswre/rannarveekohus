@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./ContactForm.css";
 
 const ContactForm: React.FC = () => {
     const [formData, setFormData] = useState({
@@ -45,7 +44,7 @@ const ContactForm: React.FC = () => {
             {success && <p>Tack! Vi återkommer snart. 😊</p>}
             {error && <p>Något gick fel, försök igen. 😞</p>}
 
-            <form name="kontakt" method="POST" data-netlify="true" data-netlify-recaptcha="true" onSubmit={handleSubmit}>
+            <form name="kontakt" method="POST" data-netlify="true" onSubmit={handleSubmit}>
                 <input type="hidden" name="form-name" value="kontakt" />
 
                 <label>
@@ -62,9 +61,6 @@ const ContactForm: React.FC = () => {
                     Meddelande:
                     <textarea name="meddelande" value={formData.meddelande} onChange={handleChange} required />
                 </label>
-
-                {/* reCAPTCHA */}
-                <div data-netlify-recaptcha="true"></div>
 
                 <button type="submit">Skicka</button>
             </form>
