@@ -1,4 +1,4 @@
-import ContactForm from "../../components/ContactForm/ContactForm"
+// import ContactForm from "../../components/ContactForm/ContactForm"
 import Navbar from "../../components/Navbar/Navbar"
 import './Contact.css'
 
@@ -13,10 +13,10 @@ const Contact = () => {
                 <p><a href="mailto:hallinwretblad@gmail.com">hallinwretblad@gmail.com</a></p>
                 <p>Klinte Valle 433</p>
                 <p>62376 Klintehamn</p>
-                <div>
+                {/* <div>
 
                     <ContactForm />
-                </div>
+                </div> */}
             </div>
 
         </div>
