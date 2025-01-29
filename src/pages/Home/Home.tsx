@@ -100,8 +100,10 @@ const Home = () => {
                         </div>
                     </div>
                     <div className="Home-Describing-Text">
-                        <p>Välkommen till denna lantliga idyll! Vi har ett fantastiskt öppet läge med sol från morgon till kväll.&nbsp;
-                            <Link to="/facilities">Boendeinformation...</Link>
+                        <p>
+                            Välkommen till vår lantliga idyll! Här kan du njuta av en fantastisk utsikt och sol från morgon till kväll.
+                            <span> </span>
+                            <Link to="/facilities">Läs mer om vårt boende här.</Link>
                         </p>
                     </div>
                     <div className="Image-Gallery-Home-Container">

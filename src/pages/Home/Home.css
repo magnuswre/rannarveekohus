@@ -54,6 +54,8 @@
 .Home-Bullets {
     width: 80%;
     margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: center;
@@ -86,12 +88,23 @@
     .Home-Hero img {
         height: 300px;
     }
+
+    .Home-Describing-Text p {
+        margin-bottom: 20px;
+
+    }
 }
 
 @media(min-width: 624px) {
     .Home-Hero img {
         height: 400px;
     }
+
+    .Home-Describing-Text p {
+        margin-top: 20px;
+
+    }
+
 }
 
 @media (min-width: 768px) {
@@ -107,8 +120,6 @@
 
 @media (min-width: 860px) {
     .Home-Hero img {
-        /* text-align: center; */
-        /* border: 2px solid #333; */
         max-width: 95%;
         height: 500px;
     }
@@ -116,6 +127,11 @@
     .Home-Describing-Text p {
         text-align: center;
     }
+
+    .Home-Bullets {
+        max-width: 60%;
+    }
+
 }
 
 @media (min-width: 1076px) {

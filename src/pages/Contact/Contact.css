@@ -3,8 +3,12 @@
     padding: 20px;
 }
 
-
 .Contact-Info * {
     line-height: 1.5;
     text-align: left;
+}
+
+.Contact-Info a {
+    color: black;
+
 }
