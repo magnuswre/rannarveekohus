@@ -17,7 +17,7 @@ const ContactForm: React.FC = () => {
         e.preventDefault();
 
         const formDataEncoded = new URLSearchParams();
-        formDataEncoded.append("form-name", "kontakt");
+        formDataEncoded.append("form-name", "contact");
         Object.entries(formData).forEach(([key, value]) => formDataEncoded.append(key, value));
 
         try {
@@ -56,7 +56,7 @@ const ContactForm: React.FC = () => {
                 {success && <p>Tack! Vi återkommer snart. 😊</p>}
                 {error && <p>Något gick fel, försök igen. 😞</p>}
 
-                <form name="kontakt" method="POST" data-netlify="true" onSubmit={handleSubmit}>
+                <form name="contact" method="POST" data-netlify="true" onSubmit={handleSubmit}>
                     <input type="hidden" name="form-name" value="kontakt" />
 
                     <label>
