@@ -5,3 +5,12 @@
     /* margin-bottom: 20px; */
     text-align: left;
 }
+
+@media (min-width: 860px) {
+
+    .Facilities-Content p,
+    .Facilities-Content h3 {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}

@@ -10,5 +10,13 @@
 
 .Contact-Info a {
     color: black;
+}
 
+@media (min-width: 860px) {
+
+    .Contact-Info p,
+    .Contact-Info h3 {
+        max-width: 80%;
+        margin: 0 auto;
+    }
 }

@@ -9,3 +9,12 @@
     padding-top: 10px;
     padding-bottom: 10px;
 } */
+
+@media (min-width: 860px) {
+
+    .BuildingTechnique-Content p,
+    .BuildingTechnique-Content h3 {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}
