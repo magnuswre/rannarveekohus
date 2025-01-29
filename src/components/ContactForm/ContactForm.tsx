@@ -4,14 +4,14 @@ const ContactForm: React.FC = () => {
     const [formData, setFormData] = useState({
         name: "",
         email: "",
+        subject: "",
         message: ""
     });
     const [success, setSuccess] = useState(false);
     const [error, setError] = useState(false);
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-        const { name, value } = e.target;
-        setFormData({ ...formData, [name]: value });
+        setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
     const handleSubmit = async (e: React.FormEvent) => {
@@ -19,9 +19,7 @@ const ContactForm: React.FC = () => {
 
         const formDataEncoded = new URLSearchParams();
         formDataEncoded.append("form-name", "contact");
-        Object.entries(formData).forEach(([key, value]) => {
-            formDataEncoded.append(key, value);
-        });
+        Object.entries(formData).forEach(([key, value]) => formDataEncoded.append(key, value));
 
         try {
             const response = await fetch("/", {
@@ -32,7 +30,7 @@ const ContactForm: React.FC = () => {
 
             if (response.ok) {
                 setSuccess(true);
-                setFormData({ name: "", email: "", message: "" });
+                setFormData({ name: "", email: "", subject: "", message: "" });
             } else {
                 throw new Error("Form submission failed");
             }
@@ -43,25 +41,34 @@ const ContactForm: React.FC = () => {
 
     return (
         <div>
-            <h2>Kontakta oss</h2>
-            {success && <p>Tack! Vi återkommer snart. 😊</p>}
-            {error && <p>Något gick fel, försök igen. 😞</p>}
+            <h2>Contact Us</h2>
+            {success && <p>Thank you! We'll get back to you soon. 😊</p>}
+            {error && <p>Something went wrong, please try again. 😞</p>}
 
             <form name="contact" method="POST" data-netlify="true" onSubmit={handleSubmit}>
                 <input type="hidden" name="form-name" value="contact" />
 
-                <p>
-                    <label>Your Name: <input type="text" name="name" value={formData.name} onChange={handleChange} required /></label>
-                </p>
-                <p>
-                    <label>Your Email: <input type="email" name="email" value={formData.email} onChange={handleChange} required /></label>
-                </p>
-                <p>
-                    <label>Message: <textarea name="message" value={formData.message} onChange={handleChange} required></textarea></label>
-                </p>
-                <p>
-                    <button type="submit">Send</button>
-                </p>
+                <label>
+                    Name:
+                    <input type="text" name="name" value={formData.name} onChange={handleChange} required />
+                </label>
+
+                <label>
+                    Email:
+                    <input type="email" name="email" value={formData.email} onChange={handleChange} required />
+                </label>
+
+                <label>
+                    Subject:
+                    <input type="text" name="subject" value={formData.subject} onChange={handleChange} required />
+                </label>
+
+                <label>
+                    Message:
+                    <textarea name="message" value={formData.message} onChange={handleChange} required />
+                </label>
+
+                <button type="submit">Send</button>
             </form>
         </div>
     );
