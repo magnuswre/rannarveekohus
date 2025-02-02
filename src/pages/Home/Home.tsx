@@ -1,6 +1,7 @@
 // import ImageCard from "../../components/ImageCard/ImageCard"
 import Navbar from "../../components/Navbar/Navbar"
 import './Home.css'
+import { Link } from "react-router-dom";
 import imageOne from "../../assets/valleost2.jpg"
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
@@ -19,7 +20,9 @@ import imageSix from "../../assets/IMG_3299.jpg";
 import imageSeven from "../../assets/vallevastkvall.jpg";
 import imageEight from "../../assets/IMG_3295.jpg";
 import imageNine from "../../assets/vallekok.jpg";
-import { Link } from "react-router-dom";
+import imageTen from "../../assets/Hallbild1a.jpg";
+import { useState } from "react";
+
 
 
 const images = [
@@ -55,9 +58,18 @@ const images = [
         original: imageNine,
         thumbnail: imageNine,
     },
+    {
+        original: imageTen,
+        thumbnail: imageTen,
+    },
 ]
 
 const Home = () => {
+    const [isFullscreen, setIsFullscreen] = useState(false);
+
+    const handleScreenChange = (fullScreen: boolean) => {
+        setIsFullscreen(fullScreen);
+    };
     return (
         <>
             <div className="Home-Container">
@@ -106,12 +118,8 @@ const Home = () => {
                             <Link to="/facilities">Läs mer om vårt boende här.</Link>
                         </p>
                     </div>
-                    <div className="Image-Gallery-Home-Container">
-                        <ImageGallery
-                            items={images}
-                            slideDuration={1000}
-
-                        />
+                    <div className={`Image-Gallery-Home-Container ${isFullscreen ? "fullscreen-active" : ""}`}>
+                        <ImageGallery items={images} slideDuration={1000} onScreenChange={handleScreenChange} />
                     </div>
                 </div>
                 {/* <ImageCard /> */}

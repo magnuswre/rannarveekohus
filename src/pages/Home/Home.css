@@ -32,10 +32,23 @@
     margin-right: 20px;
 }
 
-.image-gallery-slide .image-gallery-image {
+/* .image-gallery-slide .image-gallery-image {
     height: 200px;
     background-color: black;
     object-fit: cover !important;
+} */
+
+/* Default gallery image */
+.image-gallery-slide .image-gallery-image {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* When fullscreen is active */
+.fullscreen-active .image-gallery-slide .image-gallery-image {
+    height: 100vh !important;
+    width: 100vw !important;
+    object-fit: contain !important;
 }
 
 .image-gallery-svg {
