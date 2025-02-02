@@ -121,10 +121,11 @@
 }
 
 @media (min-width: 768px) {
-    .Image-Gallery-Home-Container {
+    /* .Image-Gallery-Home-Container {
         display: flex;
         justify-content: center;
-    }
+    } */
+
 
     .image-gallery-slide .image-gallery-image {
         height: 600px;

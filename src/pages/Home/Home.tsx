@@ -1,6 +1,7 @@
 // import ImageCard from "../../components/ImageCard/ImageCard"
 import Navbar from "../../components/Navbar/Navbar"
 import './Home.css'
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import imageOne from "../../assets/valleost2.jpg"
 import ImageGallery from "react-image-gallery";
@@ -12,17 +13,32 @@ import EcoHouse from '../../assets/rural-hotel-sign-of-a-house-and-a-leaf-svgrep
 import Relaxing from '../../assets/man-lying-on-a-deck-chair-of-a-spa-svgrepo-com.svg'
 
 
-import imageTwo from "../../assets/IMG_3302.jpg";
+// import imageTwo from "../../assets/IMG_3302.jpg";
+import imageTwo from "../../assets/Hallbild1a.jpg";
+
 import imageThree from "../../assets/utsiktvalle1.jpg";
-import imageFour from "../../assets/vallenyamotladan.jpg";
+import imageFour from "../../assets/vallesoderbild.jpg";
 import imageFive from "../../assets/IMG_3297.jpg";
 import imageSix from "../../assets/IMG_3299.jpg";
 import imageSeven from "../../assets/vallevastkvall.jpg";
 import imageEight from "../../assets/IMG_3295.jpg";
-import imageNine from "../../assets/vallekok.jpg";
+// import imageNine from "../../assets/vallekok.jpg";
 import imageTen from "../../assets/Hallbild1a.jpg";
-import { useState } from "react";
-
+import imageEleven from "../../assets/badrumvalle.jpg";
+import imageTwelve from "../../assets/solbildvallle.jpg";
+import imageThirteen from "../../assets/kok1.jpg";
+import imageFourteen from "../../assets/kok2.jpg";
+import imageFifteen from "../../assets/kok3.jpg";
+import imageSixteen from "../../assets/vardagsrum1.jpg";
+import imageSeventeen from "../../assets/vardagsrum2.jpg";
+import imageEighteen from "../../assets/vysoder.jpg";
+import imageNineteen from "../../assets/vysoder2.jpg";
+import imageTwenty from "../../assets/gastrum.jpg";
+import imageTwentyOne from "../../assets/sovrum1.jpg";
+import imageTwentyTwo from "../../assets/sovrum2.jpg";
+import imageTwentyThree from "../../assets/sovbod1.jpg";
+import imageTwentyFour from "../../assets/sovbod2.jpg";
+import imageTwentyFive from "../../assets/valleentre.jpg";
 
 
 const images = [
@@ -54,13 +70,69 @@ const images = [
         original: imageEight,
         thumbnail: imageEight,
     },
-    {
-        original: imageNine,
-        thumbnail: imageNine,
-    },
+    // {
+    //     original: imageNine,
+    //     thumbnail: imageNine,
+    // },
     {
         original: imageTen,
         thumbnail: imageTen,
+    },
+    {
+        original: imageEleven,
+        thumbnail: imageEleven,
+    },
+    {
+        original: imageTwelve,
+        thumbnail: imageTwelve,
+    },
+    {
+        original: imageThirteen,
+        thumbnail: imageThirteen,
+    },
+    {
+        original: imageFourteen,
+        thumbnail: imageFourteen,
+    },
+    {
+        original: imageFifteen,
+        thumbnail: imageFifteen,
+    },
+    {
+        original: imageSixteen,
+        thumbnail: imageSixteen,
+    },
+    {
+        original: imageSeventeen,
+        thumbnail: imageSeventeen,
+    },
+    {
+        original: imageEighteen,
+        thumbnail: imageEighteen,
+    },
+    {
+        original: imageNineteen,
+        thumbnail: imageNineteen,
+    },
+    {
+        original: imageTwenty,
+        thumbnail: imageTwenty,
+    },
+    {
+        original: imageTwentyOne,
+        thumbnail: imageTwentyOne,
+    },
+    {
+        original: imageTwentyTwo,
+        thumbnail: imageTwentyTwo,
+    },
+    {
+        original: imageTwentyThree,
+        thumbnail: imageTwentyThree,
+    },
+    {
+        original: imageTwentyFour,
+        thumbnail: imageTwentyFour,
     },
 ]
 
@@ -76,7 +148,7 @@ const Home = () => {
                 <Navbar />
                 <div className="Home-Content">
                     <div className="Home-Hero">
-                        <img src={imageOne} alt="" />
+                        <img src={imageTwentyFive} alt="" />
                     </div>
                     <div className="Home-Bullets">
                         <div className="Home-Bullets-Info">
