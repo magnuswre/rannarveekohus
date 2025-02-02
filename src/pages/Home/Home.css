@@ -1,4 +1,159 @@
+/* Ensure background color for content */
 .Home-Content {
+    background-color: #F2F2F0;
+}
+
+/* Hero Image */
+.Home-Hero img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: 85% center;
+}
+
+/* Paragraph Styling */
+.Home-Container p {
+    margin-top: 1rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* Image Gallery Container */
+.Image-Gallery-Home-Container {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* Default gallery image */
+.image-gallery-slide .image-gallery-image {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* ✅ FIX: Enable scrolling when fullscreen is active */
+.fullscreen-active {
+    overflow-y: auto !important;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    -webkit-overflow-scrolling: touch;
+    /* Ensures smooth scrolling on iOS */
+    touch-action: auto !important;
+    /* Fix for Samsung (Chrome/Android) */
+}
+
+/* ✅ Ensure gallery images are scrollable in fullscreen */
+.fullscreen-active .image-gallery-content {
+    overflow-y: scroll !important;
+}
+
+/* Remove default button backgrounds */
+.image-gallery-svg {
+    border: none;
+    background-color: transparent;
+}
+
+/* Hide Play Button */
+.image-gallery-play-button {
+    display: none;
+}
+
+/* Bullets Background */
+.image-gallery-bullets-container {
+    background-color: black;
+}
+
+/* Bullets Section */
+.Home-Bullets {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+
+/* Bullet Icons */
+.Home-Bullets-Info div {
+    display: flex;
+    align-items: center;
+}
+
+/* Icons */
+.Home-Bed-Icon,
+.Home-Bedroom-Icon,
+.Home-Eco-House-Icon,
+.Home-Relaxing-Icon {
+    height: 25px;
+    color: black;
+}
+
+/* Description Text */
+.Home-Describing-Text p {
+    line-height: 1.5;
+    text-align: left;
+}
+
+.Home-Describing-Text a {
+    color: #333;
+    font-weight: 600;
+}
+
+/* ✅ RESPONSIVE DESIGN */
+@media(min-width: 412px) {
+    .Home-Hero img {
+        height: 300px;
+    }
+
+    .Home-Describing-Text p {
+        margin-bottom: 20px;
+    }
+}
+
+@media(min-width: 624px) {
+    .Home-Hero img {
+        height: 400px;
+    }
+
+    .Home-Describing-Text p {
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .image-gallery-slide .image-gallery-image {
+        height: 600px;
+    }
+}
+
+@media (min-width: 860px) {
+    .Home-Hero img {
+        max-width: 95%;
+        height: 500px;
+    }
+
+    .Home-Describing-Text p {
+        text-align: center;
+    }
+
+    .Home-Bullets {
+        max-width: 60%;
+    }
+}
+
+@media (min-width: 1076px) {
+    .Home-Hero img {
+        max-width: 850px;
+    }
+}
+
+
+/* .Home-Content {
     background-color: #F2F2F0;
 }
 
@@ -32,22 +187,14 @@
     margin-right: 20px;
 }
 
-/* .image-gallery-slide .image-gallery-image {
-    height: 200px;
-    background-color: black;
-    object-fit: cover !important;
-} */
 
-/* Default gallery image */
 .image-gallery-slide .image-gallery-image {
     height: 200px;
     object-fit: cover;
 }
 
-/* When fullscreen is active */
 .fullscreen-active .image-gallery-slide .image-gallery-image {
-    height: 100vh !important;
-    width: 100vw !important;
+    height: 80vh;
     object-fit: contain !important;
 }
 
@@ -121,12 +268,6 @@
 }
 
 @media (min-width: 768px) {
-    /* .Image-Gallery-Home-Container {
-        display: flex;
-        justify-content: center;
-    } */
-
-
     .image-gallery-slide .image-gallery-image {
         height: 600px;
     }
@@ -152,4 +293,4 @@
     .Home-Hero img {
         max-width: 850px;
     }
-}
+} */

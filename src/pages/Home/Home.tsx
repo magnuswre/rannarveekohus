@@ -16,7 +16,7 @@ import Relaxing from '../../assets/man-lying-on-a-deck-chair-of-a-spa-svgrepo-co
 // import imageTwo from "../../assets/IMG_3302.jpg";
 import imageTwo from "../../assets/Hallbild1a.jpg";
 
-import imageThree from "../../assets/utsiktvalle1.jpg";
+// import imageThree from "../../assets/utsiktvalle1.jpg";
 import imageFour from "../../assets/vallesoderbild.jpg";
 import imageFive from "../../assets/IMG_3297.jpg";
 import imageSix from "../../assets/IMG_3299.jpg";
@@ -46,10 +46,10 @@ const images = [
         original: imageTwo,
         thumbnail: imageTwo,
     },
-    {
-        original: imageThree,
-        thumbnail: imageThree,
-    },
+    // {
+    //     original: imageThree,
+    //     thumbnail: imageThree,
+    // },
     {
         original: imageFour,
         thumbnail: imageFour,
@@ -141,6 +141,14 @@ const Home = () => {
 
     const handleScreenChange = (fullScreen: boolean) => {
         setIsFullscreen(fullScreen);
+
+        if (fullScreen) {
+            document.body.style.overflow = "auto"; // Enable scrolling
+            document.documentElement.style.overflow = "auto"; // Ensure root element scrolls
+        } else {
+            document.body.style.overflow = "visible";
+            document.documentElement.style.overflow = "visible";
+        }
     };
     return (
         <>
