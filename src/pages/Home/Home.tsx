@@ -35,7 +35,7 @@ import imageTwentyOne from "../../assets/sovrum1.jpg";
 import imageTwentyTwo from "../../assets/sovrum2.jpg";
 import imageTwentyThree from "../../assets/sovbod1.jpg";
 import imageTwentyFour from "../../assets/sovbod2.jpg";
-import imageTwentyFive from "../../assets/valleentre.jpg";
+// import imageTwentyFive from "../../assets/valleentre.jpg";
 
 
 const images = [
