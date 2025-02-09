@@ -201,7 +201,7 @@ const Home = () => {
                             showPlayButton={false}
                             showFullscreenButton={true}
                             onClick={() => {
-                                document.querySelector(".image-gallery-fullscreen-button")?.click();
+                                (document.querySelector(".image-gallery-fullscreen-button") as HTMLElement)?.click();
                             }}
                         />
                     </div>
