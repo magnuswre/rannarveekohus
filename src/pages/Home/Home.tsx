@@ -1,9 +1,7 @@
-// import ImageCard from "../../components/ImageCard/ImageCard"
 import Navbar from "../../components/Navbar/Navbar"
 import './Home.css'
 import { useState } from "react";
 import { Link } from "react-router-dom";
-// import imageOne from "../../assets/valleost2.jpg"
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 
@@ -196,10 +194,18 @@ const Home = () => {
                         </p>
                     </div>
                     <div className={`Image-Gallery-Home-Container ${isFullscreen ? "fullscreen-active" : ""}`}>
-                        <ImageGallery items={images} slideDuration={1000} onScreenChange={handleScreenChange} />
+                        <ImageGallery
+                            items={images}
+                            slideDuration={1000}
+                            onScreenChange={handleScreenChange}
+                            showPlayButton={false}
+                            showFullscreenButton={true}
+                            onClick={() => {
+                                document.querySelector(".image-gallery-fullscreen-button")?.click();
+                            }}
+                        />
                     </div>
                 </div>
-                {/* <ImageCard /> */}
             </div >
         </>
     )
