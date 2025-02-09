@@ -80,4 +80,11 @@
         background-color: white;
     }
 
+    .hamburger {
+        display: none !important;
+    }
+
+    .menu-container {
+        display: none !important;
+    }
 }
