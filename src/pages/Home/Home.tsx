@@ -12,18 +12,15 @@ import BedRoom from '../../assets/sleep-bed-bedroom-furniture-chair-households-b
 import EcoHouse from '../../assets/rural-hotel-sign-of-a-house-and-a-leaf-svgrepo-com.svg'
 import Relaxing from '../../assets/man-lying-on-a-deck-chair-of-a-spa-svgrepo-com.svg'
 
-
-// import imageTwo from "../../assets/IMG_3302.jpg";
-import imageTwo from "../../assets/Hallbild1a.jpg";
-
-// import imageThree from "../../assets/utsiktvalle1.jpg";
-import imageFour from "../../assets/vallesoderbild.jpg";
+import imageTwo from "../../assets/vallesoderbild.jpg";
+import imageThree from "../../assets/vysoder3.jpg";
+import imageFour from "../../assets/valleentre.jpg";
 import imageFive from "../../assets/IMG_3297.jpg";
 import imageSix from "../../assets/IMG_3299.jpg";
 import imageSeven from "../../assets/vallevastkvall.jpg";
-import imageEight from "../../assets/IMG_3295.jpg";
-// import imageNine from "../../assets/vallekok.jpg";
-import imageTen from "../../assets/Hallbild1a.jpg";
+import imageEight from "../../assets/Hallbild1a.jpg";
+import imageNine from "../../assets/IMG_3295.jpg";
+// import imageTen from "../../assets/Hallbild1a.jpg";
 import imageEleven from "../../assets/badrumvalle.jpg";
 import imageTwelve from "../../assets/solbildvallle.jpg";
 import imageThirteen from "../../assets/kok1.jpg";
@@ -46,10 +43,10 @@ const images = [
         original: imageTwo,
         thumbnail: imageTwo,
     },
-    // {
-    //     original: imageThree,
-    //     thumbnail: imageThree,
-    // },
+    {
+        original: imageThree,
+        thumbnail: imageThree,
+    },
     {
         original: imageFour,
         thumbnail: imageFour,
@@ -70,14 +67,14 @@ const images = [
         original: imageEight,
         thumbnail: imageEight,
     },
-    // {
-    //     original: imageNine,
-    //     thumbnail: imageNine,
-    // },
     {
-        original: imageTen,
-        thumbnail: imageTen,
+        original: imageNine,
+        thumbnail: imageNine,
     },
+    // {
+    //     original: imageTen,
+    //     thumbnail: imageTen,
+    // },
     {
         original: imageEleven,
         thumbnail: imageEleven,
@@ -143,8 +140,8 @@ const Home = () => {
         setIsFullscreen(fullScreen);
 
         if (fullScreen) {
-            document.body.style.overflow = "auto"; // Enable scrolling
-            document.documentElement.style.overflow = "auto"; // Ensure root element scrolls
+            document.body.style.overflow = "auto";
+            document.documentElement.style.overflow = "auto";
         } else {
             document.body.style.overflow = "visible";
             document.documentElement.style.overflow = "visible";
@@ -156,7 +153,7 @@ const Home = () => {
                 <Navbar />
                 <div className="Home-Content">
                     <div className="Home-Hero">
-                        <img src={imageTwentyFive} alt="" />
+                        <img src={imageEighteen} alt="" />
                     </div>
                     <div className="Home-Bullets">
                         <div className="Home-Bullets-Info">
