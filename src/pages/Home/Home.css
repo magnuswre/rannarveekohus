@@ -43,9 +43,9 @@
 }
 
 .fullscreen-active .image-gallery-slide .image-gallery-image {
-    height: 70vh;
-    /* max-width: 100%;
-    object-fit: contain; */
+    height: 60vh;
+    max-width: 100%;
+    object-fit: contain;
 }
 
 .image-gallery-svg {
